@@ -7,6 +7,9 @@ description: RE and exploit dev notes
 
 url: "https://whatevenisapointer.github.io"
 
+minima:
+  skin: dark
+
 theme: minima
 
 plugins:
