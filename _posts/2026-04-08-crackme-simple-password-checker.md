@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: "Crackme Writeup: Simple Password Checker"
+date: 2026-04-08
+---
 ## Challenge
 
 A simple password checker that checks against a hardcoded string.
