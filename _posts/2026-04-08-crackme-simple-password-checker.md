@@ -2,6 +2,7 @@
 layout: post
 title: "Crackme Writeup: Simple Password Checker"
 date: 2026-04-08
+link: https://crackmes.one/crackme/691fd9362d267f28f69b7f89
 ---
 ## Challenge
 
