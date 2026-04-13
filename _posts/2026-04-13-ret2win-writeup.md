@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ROP Emporium: ret2win (x86)"
-date: 2026-04-10
+date: 2026-04-13
 ---
 
 ## Challenge
