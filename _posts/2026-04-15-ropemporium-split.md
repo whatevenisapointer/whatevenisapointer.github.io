@@ -120,4 +120,3 @@ We have now got our flag `ROPE{a_placeholder_32byte_flag!}`
 
 [whatisapointer](https://x.com/whatisapointer)
 
-[whatisapointer]https://github.com/whatevenisapointer
