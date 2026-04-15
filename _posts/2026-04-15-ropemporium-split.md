@@ -118,6 +118,6 @@ system("/bin/cat flag.txt");
 
 We have now got our flag `ROPE{a_placeholder_32byte_flag!}` 
 
-https://x.com/whatisapointer
+[whatisapointer](https://x.com/whatisapointer)
 
-https://github.com/whatevenisapointer
+[whatisapointer]https://github.com/whatevenisapointer
