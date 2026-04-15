@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ROP Emporium: split x86_64"
-date: 2026-04-11
+date: 2026-04-15
 ---
 
 
