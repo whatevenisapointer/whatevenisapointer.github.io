@@ -15,13 +15,13 @@ We are provided with:
 - A vulnerable function `pwnme()` which is vulnerable to buffer overflow 
 ## Approach
 
-**Security Check
+**Security Check**
 
 ![checksec](/assets/images/2026-04-15/checksec.png)
 
 As we can see `NX enabled` which means the stack is non-executable and we cannot inject shellcode and must use ROP techniques.
 
-**Inspecting the functions
+**Inspecting the functions**
 
 ![functions](/assets/images/2026-04-15/functions.png)
 
@@ -50,7 +50,7 @@ system("/bin/ls");
 ```
 
 
-**Finding the Offset
+**Finding the Offset**
 
 Lets find the offset using a cyclic pattern
 
@@ -70,7 +70,7 @@ Found at offset 40
 
 Offset = 40 bytes
 
-**Finding the String Address
+**Finding the String Address**
 ```bash
 pwndbg> search -t string "/bin/cat flag.txt""
 Searching for string: b'/bin/cat flag.txt\x00'
@@ -79,7 +79,7 @@ split           0x601060 '/bin/cat flag.txt'
 
 As you can see the address is `0x601060` 
 
-**Finding a gadget using ROPgadget
+**Finding a gadget using ROPgadget**
 
 We need a gadget to control the first argument register `rdi`:
 
@@ -87,7 +87,7 @@ We need a gadget to control the first argument register `rdi`:
 
 Okay now that we have the everything we need lets make our payload.
 
-**Exploit Code
+**Exploit Code**
 
 ``` python
 from pwn import *
